@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+<rect width="1100" height="720" fill="#f7f9fc"/><text x="45" y="48" font-family="Arial" font-size="28" font-weight="bold" fill="#14213d">Wireless CNC Plotter — electrical overview</text>
+<text x="45" y="78" font-family="Arial" font-size="15" fill="#475569">Conceptual wiring only. Check board revisions, polarity, driver orientation and current limits before powering.</text>
+<g font-family="Arial" fill="#14213d" stroke="#334155" stroke-width="2">
+<rect x="55" y="145" width="235" height="160" rx="12" fill="#dbeafe"/><text x="78" y="180" font-size="21" font-weight="bold" stroke="none">Arduino Uno +</text><text x="78" y="207" font-size="21" font-weight="bold" stroke="none">CNC Shield V3</text><text x="78" y="242" font-size="15" stroke="none">GRBL 1.1 motion controller</text><text x="78" y="267" font-size="14" stroke="none">D0 RX / D1 TX @ 115200</text>
+<rect x="400" y="145" width="235" height="160" rx="12" fill="#dcfce7"/><text x="430" y="182" font-size="22" font-weight="bold" stroke="none">ESP32 DevKit</text><text x="430" y="215" font-size="15" stroke="none">Wi-Fi AP + TCP bridge</text><text x="430" y="242" font-size="14" stroke="none">GPIO16 RX / GPIO17 TX</text><text x="430" y="267" font-size="14" stroke="none">GPIO18 servo signal</text>
+<rect x="775" y="120" width="245" height="105" rx="12" fill="#ffedd5"/><text x="805" y="157" font-size="20" font-weight="bold" stroke="none">X / Y stepper motors</text><text x="805" y="188" font-size="14" stroke="none">A4988 modules on shield</text>
+<rect x="775" y="270" width="245" height="105" rx="12" fill="#fce7f3"/><text x="805" y="307" font-size="20" font-weight="bold" stroke="none">Pen servo</text><text x="805" y="338" font-size="14" stroke="none">External regulated 5 V</text>
+<rect x="55" y="445" width="235" height="100" rx="12" fill="#fef3c7"/><text x="86" y="483" font-size="20" font-weight="bold" stroke="none">12 V DC supply</text><text x="86" y="514" font-size="14" stroke="none">Fused motor input</text>
+<rect x="400" y="445" width="235" height="100" rx="12" fill="#e0e7ff"/><text x="430" y="483" font-size="20" font-weight="bold" stroke="none">5 V servo supply</text><text x="430" y="514" font-size="14" stroke="none">1 A+; not ESP 3V3</text>
+<rect x="775" y="445" width="245" height="100" rx="12" fill="#e2e8f0"/><text x="835" y="483" font-size="20" font-weight="bold" stroke="none">Wi-Fi sender</text><text x="811" y="514" font-size="14" stroke="none">Connect TCP 192.168.4.1:23</text>
+</g>
+<g fill="none" stroke-width="4">
+<path d="M290 220 H400" stroke="#2563eb"/><path d="M635 185 H775" stroke="#ea580c"/><path d="M635 260 C700 260 710 320 775 320" stroke="#be185d"/><path d="M290 490 C330 490 340 285 300 285" stroke="#ca8a04"/><path d="M520 445 V305" stroke="#7c3aed"/><path d="M775 490 C720 490 700 235 635 235" stroke="#16a34a"/>
+</g>
+<g font-family="Arial" font-size="13" fill="#334155"><text x="310" y="208">UART2 TX → Uno RX; Uno TX → ESP RX via divider</text><text x="652" y="173">Step/dir signals via shield</text><text x="652" y="300">GPIO18 signal; grounds common</text><text x="301" y="470">12 V motor power</text><text x="528" y="375">+5 V and GND to servo</text><text x="678" y="474">TCP G-code</text></g>
+<path d="M80 620 H1010" stroke="#475569" stroke-width="3"/><text x="80" y="654" font-family="Arial" font-size="17" font-weight="bold" fill="#14213d">COMMON GROUND: supply negative, shield/Uno GND, ESP32 GND, servo supply negative</text><text x="80" y="682" font-family="Arial" font-size="14" fill="#b91c1c">Important: Uno TX is 5 V — use a resistor divider before ESP32 GPIO16. Disconnect UART leads for Uno USB upload.</text>
+</svg>

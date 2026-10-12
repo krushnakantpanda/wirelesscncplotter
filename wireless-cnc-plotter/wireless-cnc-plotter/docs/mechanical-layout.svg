@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+<rect width="1000" height="720" fill="#fbfdff"/><text x="50" y="48" font-family="Arial" font-size="27" font-weight="bold" fill="#14213d">Plotter mechanical layout — top view</text><text x="50" y="78" font-family="Arial" font-size="15" fill="#475569">Nominal frame 300 × 240 mm • target drawable area about 180 × 120 mm</text>
+<!-- outside dimension frame -->
+<rect x="180" y="155" width="600" height="480" rx="5" fill="#f1f5f9" stroke="#334155" stroke-width="8"/>
+<!-- rails -->
+<rect x="220" y="188" width="520" height="18" fill="#94a3b8"/><rect x="220" y="584" width="520" height="18" fill="#94a3b8"/>
+<text x="410" y="185" font-family="Arial" font-size="13" fill="#334155">Y guide rails (parallel)</text>
+<!-- gantry -->
+<rect x="250" y="270" width="460" height="24" rx="5" fill="#2563eb"/><text x="440" y="265" font-family="Arial" font-size="15" fill="#1e3a8a">X gantry beam</text>
+<!-- carriage -->
+<rect x="455" y="245" width="50" height="76" rx="6" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/><circle cx="480" cy="330" r="10" fill="#db2777"/><text x="515" y="330" font-family="Arial" font-size="14" fill="#9d174d">Pen carriage + servo</text>
+<!-- work zone -->
+<rect x="300" y="330" width="360" height="240" fill="#ecfccb" stroke="#65a30d" stroke-width="3" stroke-dasharray="9 6"/><text x="380" y="445" font-family="Arial" font-size="21" font-weight="bold" fill="#365314">WORK AREA</text><text x="419" y="472" font-family="Arial" font-size="15" fill="#365314">180 × 120 mm nominal</text>
+<!-- motor/idlers -->
+<rect x="205" y="228" width="42" height="42" rx="6" fill="#f97316"/><text x="185" y="222" font-family="Arial" font-size="13" fill="#9a3412">X motor</text><rect x="713" y="228" width="42" height="42" rx="6" fill="#cbd5e1" stroke="#475569"/><text x="710" y="218" font-family="Arial" font-size="13" fill="#334155">X idler</text>
+<rect x="205" y="540" width="42" height="42" rx="6" fill="#f97316"/><text x="178" y="602" font-family="Arial" font-size="13" fill="#9a3412">Y motor*</text><rect x="713" y="540" width="42" height="42" rx="6" fill="#cbd5e1" stroke="#475569"/><text x="705" y="602" font-family="Arial" font-size="13" fill="#334155">Y idler*</text>
+<!-- belts -->
+<path d="M247 249 H713 M226 270 V561 H734 V270" fill="none" stroke="#dc2626" stroke-width="4" stroke-dasharray="10 5"/>
+<!-- dimensions -->
+<path d="M180 675 H780 M180 666 V684 M780 666 V684" stroke="#334155" stroke-width="2"/><text x="435" y="702" font-family="Arial" font-size="16" fill="#14213d">300 mm outside width</text>
+<path d="M130 155 V635 M121 155 H139 M121 635 H139" stroke="#334155" stroke-width="2"/><text x="52" y="404" font-family="Arial" font-size="16" fill="#14213d" transform="rotate(-90 52 404)">240 mm outside depth</text>
+<text x="800" y="260" font-family="Arial" font-size="14" fill="#334155">Blue: moving X gantry</text><text x="800" y="286" font-family="Arial" font-size="14" fill="#334155">Red dashed: belt paths*</text><text x="800" y="330" font-family="Arial" font-size="13" fill="#64748b">*Y belt shown schematically;</text><text x="800" y="350" font-family="Arial" font-size="13" fill="#64748b">final routing depends on</text><text x="800" y="370" font-family="Arial" font-size="13" fill="#64748b">your gantry drive design.</text>
+<text x="800" y="450" font-family="Arial" font-size="14" font-weight="bold" fill="#b91c1c">Layout guide only.</text><text x="800" y="474" font-family="Arial" font-size="13" fill="#64748b">Verify clearances, belt</text><text x="800" y="493" font-family="Arial" font-size="13" fill="#64748b">lengths, brackets and</text><text x="800" y="512" font-family="Arial" font-size="13" fill="#64748b">carriage geometry before</text><text x="800" y="531" font-family="Arial" font-size="13" fill="#64748b">fabricating or ordering.</text>
+</svg>

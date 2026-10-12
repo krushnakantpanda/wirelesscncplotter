@@ -1,0 +1,22 @@
+Item,Qty,Specification / example,Notes
+Arduino Uno R3 or compatible,1,5 V ATmega328P board,Flash upstream GRBL 1.1h
+CNC Shield V3,1,Uno-compatible,Check shield pinout and power input polarity
+A4988 stepper driver modules,2,With heatsinks,One per X/Y axis; set current limit before use
+NEMA 17 stepper motors,2,42 mm frame; current-rated to driver,Match motor coil current and driver cooling
+ESP32 DevKit,1,ESP32-WROOM development board,Wireless AP and servo controller
+Micro servo,1,SG90-class or metal-geared equivalent,Linkage must move freely; external 5 V supply
+Regulated servo supply,1,5 V 1 A minimum,Do not power servo from ESP32 3V3; share ground
+Motor power supply,1,12 V DC,Current sized for two motors; fused input recommended
+Frame extrusion,4,2020 aluminum; 2 x 300 mm and 2 x 240 mm,Nominal outer frame envelope; cut to your joint scheme
+X gantry extrusion,1,2020 aluminum; approx 260 mm,Length depends on carriage/end brackets
+GT2 timing belt,1,6 mm wide; approx 2 m,Measure final routing before cutting
+GT2 pulleys,2,20 tooth; 5 mm bore if matching motor shaft,One per axis motor
+GT2 idlers,4,6 mm belt-compatible,Use flanged idlers where needed
+V-slot wheels / carriage plates,As needed,For moving gantry and pen carriage,Select to match extrusion and geometry
+Pen holder and linkage,1,3D printed or fabricated,Design with low friction and adjustable pen pressure
+Limit switches (optional),2-4,Normally open or normally closed microswitch,Not required for initial open-loop build; configure only after validation
+Wiring and connectors,As needed,Motor cable, signal wire, ferrules, terminals, zip ties,Keep motor wiring away from logic where practical
+Logic level divider resistors,1 set,1 kohm + 2 kohm,Uno TX (5 V) to ESP32 RX (3.3 V) divider
+USB cable / power adapter,1 each,Data cable for Uno setup; USB 5 V for ESP32,Unplug Uno USB during wireless operation
+Fasteners,As needed,M5 hardware, extrusion nuts, washers,For selected frame brackets and carriage
+Emergency stop / power cutoff,1,Normally-closed latching switch recommended,Strongly recommended for a finished machine
